@@ -12,4 +12,4 @@ do {
         document.writeln("El número de DNI es: " + dni + "<br>");
         document.writeln("La letra del DNI es: " + letras[letra] + "<br>");
     }
-} while (condition);
+} while (confirm("¿Quieres calcular otra letra de DNI?"));
