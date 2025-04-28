@@ -1,31 +1,41 @@
-// Sintasis: funcion tradicional, expresion de funcion, funcion flecha
+//Sintaxis: funcion tradicinal, expresion de funcion, arrow functions
 
 //funciones sin parametros
-function saludar() {
-  // todas las linead de codigo que quiero hacer para saludar
-  document.writeln("Hola Mundo🫎 <br>");
+// function saludar(){
+//     //todas las lineas de codigo que quiero hacer para saludar
+//     document.writeln('<p>Hola mundo 🌎</p>')
+// }
+
+// Expresion de funcion
+const saludar = function (){
+  //todas las lineas de codigo que quiero hacer para saludar
+  document.writeln('<p>Hola mundo 🌎</p>')
 }
 
-//funciones con parametro
-function sumar(numero1, numero2) {
-    const resultado = numero1 + numero2;
-    document.writeln("La suma es: " + resultado + "<br>");
+//funciones con parametros
+function sumar(numero1,numero2){
+  const resultado = numero1 + numero2
+  document.writeln(`<p>Resultado de la suma: ${resultado}</p>`)
 }
 
-//funciones que retornan valor
-function multiplicar(numero1, numero2) {
-    const resultado = numero1 * numero2;
-    return resultado; //retorna el resultado de la multiplicacion
+//funciones que retornan un valor
+// function multiplicar(numero1, numero2){
+//     const resultado = numero1 * numero2
+//     console.log(resultado)
+//     return resultado
+// }
 
-}
+const multiplicar = (numero1, numero2) => numero1 * numero2
 
 //invocar o llamar a una funcion
-saludar(); //llamo a la funcion saludar
+saludar();
 
-const numero1 = parseInt(prompt("Ingrese el primer numero: "));
-const numero2 = parseInt(prompt("Ingrese el segundo numero: "));
-sumar(numero1, numero2);
-sumar(numero1, 10);
+const num1 = parseInt(prompt('ingresa un numero'))
+const num2 = parseInt(prompt('ingresa un segundo'))
 
-const resultado= multiplicar(numero1, numero2); //llamo a la funcion multiplicar
-document.writeln("La multiplicacion es: " + resultado + "<br>");
+sumar(num1,num2);
+sumar(num1, 10)
+
+// const resultado = multiplicar(num1, num2)
+// document.writeln('El resultado de la multiplicacion es:'+ resultado)
+document.writeln('El resultado de la multiplicacion es:'+ multiplicar(num1, num2))
