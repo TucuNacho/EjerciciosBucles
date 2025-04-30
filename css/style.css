@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .parrafoResaltado{
     color: blue;
 }
@@ -6,3 +7,15 @@ table, td{
     border: 1px solid #2668ec;
     border-collapse: collapse;
 }
+=======
+.parrafoResaltado {
+  color: blue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+>>>>>>> arraysFunciones
