@@ -1,3 +1,8 @@
 .parrafoResaltado{
     color: blue;
 }
+
+table, td{
+    border: 1px solid #2668ec;
+    border-collapse: collapse;
+}
