@@ -52,6 +52,7 @@ console.log(comidas[comidas.length - 1]);
 comidas[5] = "🍞";
 listarComidas("Modificar un elemento del array");
 
+<<<<<<< HEAD
 const hamburguesa = comidas.find((comida) => comida === "🍔")
 console.log(hamburguesa);
 const hamburguesaPosition = comidas.findIndex((comida) => comida === "🍔")
@@ -60,3 +61,14 @@ const ensalada = comidas.find((comida) => comida === "🥗")
 console.log(ensalada);
 const ensaladaP = comidas.findIndex((comida) => comida === "🥗")
 console.log(ensaladaP);
+=======
+//como sabemos si existe un dato en el array
+const hamburguesa = comidas.find( (comida) => comida === '🍔' )
+const hamburguesaPosition = comidas.findIndex( (comida) => comida === '🍔' )
+const ensalada = comidas.find( (comida) => comida === '🥗' )
+const ensaladaPosition = comidas.findIndex( (comida) => comida === '🥗' )
+console.log(hamburguesa)
+console.log('Indice de la hamburguesa ' + hamburguesaPosition)
+console.log(ensalada)
+console.log('Indice de la ensalada ' + ensaladaPosition)
+>>>>>>> upstream/poo
