@@ -32,9 +32,7 @@ class CuentaBancaria {
           continue;
         } else {
           this.saldo -= extraer;
-          document.writeln(
-            `<p>Se han extraído $${extraer} de la cuenta.</p>`
-          );
+          document.writeln(`<p>Se han extraído $${extraer} de la cuenta.</p>`);
           document.writeln(`<p>Saldo actual: $${this.saldo}</p>`);
           continuar = confirm("¿Desea extraer otro monto?");
         }
@@ -67,21 +65,15 @@ const cuenta1 = new CuentaBancaria(
 );
 
 // Mostrar el saldo inicial
-document.writeln(
-  `<p>Saldo inicial: $${cuenta1.saldo}</p>`
-);
-// Ingresar dinero  
+document.writeln(`<p>Saldo inicial: $${cuenta1.saldo}</p>`);
+// Ingresar dinero
 cuenta1.ingresarDinero();
 // Mostrar el saldo después de ingresar dinero
-document.writeln(
-  `<p>Saldo después de ingresar dinero: $${cuenta1.saldo}</p>`
-);
+document.writeln(`<p>Saldo después de ingresar dinero: $${cuenta1.saldo}</p>`);
 // Extraer dinero
 cuenta1.extraerDinero();
 // Mostrar el saldo después de extraer dinero
 
-document.writeln(
-  `<p>Saldo después de extraer dinero: $${cuenta1.saldo}</p>`
-);
+document.writeln(`<p>Saldo después de extraer dinero: $${cuenta1.saldo}</p>`);
 // Informar el estado de la cuenta
 cuenta1.informarEstado();
