@@ -14,9 +14,9 @@ class Persona {
   }
   // propiedades computadas
   // get y set
-    get nombreCompleto() {
-        return this.apellido
-    }
+  get nombreCompleto() {
+    return this.apellido;
+  }
   //metodos
   mostrarDatos() {
     document.writeln(`<ul>
@@ -30,9 +30,7 @@ class Persona {
   }
 }
 
-class Alumno extends Persona {
-    
-}
+class Alumno extends Persona {}
 
 //nombreObjeto.propiedad
 //cuando utilizamos a la clase: crear un objeto o instancia
