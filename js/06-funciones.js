@@ -14,8 +14,8 @@ const saludar = function (){
 
 //funciones con parametros
 function sumar(numero1,numero2){
-    const resultado = numero1 + numero2
-    document.writeln(`<p>Resultado de la suma: ${resultado}</p>`)
+  const resultado = numero1 + numero2
+  document.writeln(`<p>Resultado de la suma: ${resultado}</p>`)
 }
 
 //funciones que retornan un valor

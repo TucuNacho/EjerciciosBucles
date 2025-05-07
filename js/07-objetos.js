@@ -12,10 +12,10 @@ const persona = {
 
   //metodos
   nombreCompleto: function () {
-    document.writeln("hola soy...");
+    document.writeln(`<p> hola soy ${this.nombre}, ${this.apellido} </p>`);
   },
   cambiarEstado: () =>{ 
-    document.writeln("cambiando estado...");
+    document.writeln("cambiando estado... <br>");
   }
 };
 
@@ -29,5 +29,14 @@ document.writeln(`<p>El dni del usuario es: ${persona.dni}</p>`);
 document.writeln(`<p>El dni del usuario es: ${persona.dnis}</p>`);
 document.writeln(`<p>El email del usuario es: ${persona['email']}</p>`);
 document.writeln(`<p>El email del usuario es: ${persona['emails']}</p>`);
+
+
+//modificar propiedades de un objeto
+
+persona.nombreUser = "Ignacio02";
+document.writeln(`<p> el nuevo nombre de usuario es: ${persona.nombreUser} </p>`);
+
+//trabajar con los metodos
+
 persona.nombreCompleto()
 persona.cambiarEstado()
